@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapsible Widget</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Collapsible Widget Demo</h1>
+        
+        <div class="widget-container">
+            <div class="collapsible-section" data-section="1">
+                <button class="collapsible-header">Section 1</button>
+                <div class="collapsible-content">
+                    <p>Это содержимое первого раздела. Оно может быть скрыто или показано при нажатии на заголовок.</p>
+                    <p>Здесь может быть любой контент: текст, изображения, формы и т.д.</p>
+                </div>
+            </div>
+
+            <div class="collapsible-section" data-section="2">
+                <button class="collapsible-header">Section 2</button>
+                <div class="collapsible-content">
+                    <p>Содержимое второго раздела. Этот виджет полезен для организации контента на странице.</p>
+                    <ul>
+                        <li>Элемент списка 1</li>
+                        <li>Элемент списка 2</li>
+                        <li>Элемент списка 3</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="collapsible-section" data-section="3">
+                <button class="collapsible-header">Section 3</button>
+                <div class="collapsible-content">
+                    <p>Третий раздел с дополнительной информацией.</p>
+                    <div class="nested-content">
+                        <p>Можно даже вкладывать другие collapsible элементы!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="expand-all" class="control-btn">Развернуть все</button>
+            <button id="collapse-all" class="control-btn">Свернуть все</button>
+        </div>
+    </div>
+</body>
+</html>
